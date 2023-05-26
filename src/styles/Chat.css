@@ -50,4 +50,9 @@
   color: #fff;
   font-size: 16 px;
   font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
 }
