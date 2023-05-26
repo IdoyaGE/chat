@@ -4,13 +4,22 @@ import { Auth } from "./components/Auth";
 import Cookies from "universal-cookie";
 import { useState, useRef } from "react";
 import { Chat } from "./components/Chat";
-
+import { signOut } from "firebase/auth";
+import { auth } from "./firebase-config";
 const cookies = new Cookies();
 
 function App() {
   const [isAuth, setIsAuth] = useState(cookies.get("auth-token"));
   const [room, setRoom] = useState(null);
   const roomInputRef = useRef(null);
+
+  const signUserOut = async () => {
+    await signOut(auth);
+    cookies.remove("auth-token");
+    setIsAuth(false);
+    setRoom(null);
+  };
+
   if (!isAuth) {
     return (
       <div>
@@ -32,6 +41,9 @@ function App() {
           </button>
         </div>
       )}
+      <div className='sign-out'>
+        <button onClick={signUserOut}>Salir</button>
+      </div>
     </div>
   );
 }
