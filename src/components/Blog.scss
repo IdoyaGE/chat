@@ -1,0 +1,31 @@
+//Estilos comúnes
+$primary-color: pink;
+$secondary-color: #333;
+$background-color: #f2f2f2;
+$font-family: "Montserrat", sans-serif;
+$font-family: "Poppins", sans-serif;
+$font-family: "Quicksand", sans-serif;
+$font-family: "Wix Madefor Display", sans-serif;
+//Estilo del título Blog
+.blog {
+  font-size: 1rem;
+  color: pink;
+}
+//Estilo del título Crea tu post
+.crea {
+  font-size: 1rem;
+  color: #495057;
+}
+
+.post {
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+}

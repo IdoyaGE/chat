@@ -13,6 +13,7 @@ import room4 from "./images/postparto.png";
 import room5 from "./images/productos.png";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Footer from "./components/Footer";
+import Blog from "./components/Blog";
 
 import momplanet from "./images/momplanet.png";
 
@@ -71,9 +72,7 @@ function App() {
           <li>
             <a href='./components/Blog'>Blog</a>
           </li>
-          <li>
-            <a href='./components/Blog'>Newsletter</a>
-          </li>
+
           <li>
             <a href='./components/Aboutus'>Sobre nosotros</a>
           </li>
@@ -102,13 +101,9 @@ function App() {
       <div className='sign-out'>
         <button onClick={signUserOut}>Salir</button>
       </div>
-      <div>
-        <Router>
-          <Routes>
-            <Route path='/' element={<Footer />} />
-          </Routes>
-        </Router>
-      </div>
+
+      <Blog />
+      <Footer />
     </div>
   );
 }
