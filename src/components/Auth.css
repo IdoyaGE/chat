@@ -1,0 +1,63 @@
+/* Estilos generales */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  width: 350px;
+  margin: 0;
+}
+
+.madre {
+  width: 300px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.auth {
+  margin-top: 20px;
+}
+button {
+  padding: 10px 20px;
+  background-color: pink;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .madre {
+    width: 150px;
+  }
+}
+h3 {
+  font-size: 30px;
+  color: #a6a6a6;
+}
+
+/* Estilos para tabletas y pantallas más grandes */
+@media only screen and (min-width: 601px) {
+  .madre {
+    width: 300px;
+  }
+}

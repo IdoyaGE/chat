@@ -1,0 +1,33 @@
+/* Estilos para el navbar */
+nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.navbar-logo img {
+  height: 50px;
+  width: auto;
+}
+
+.navbar-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar-links li {
+  float: left;
+}
+
+.navbar-links li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar-links li a:hover {
+  background-color: #ddd;
+}

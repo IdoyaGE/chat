@@ -12,6 +12,7 @@ import room3 from "./images/seguridad.png";
 import room4 from "./images/postparto.png";
 import room5 from "./images/viajar.png";
 import room6 from "./images/productos.png";
+import momplanet from "./images/momplanet.png";
 
 const cookies = new Cookies();
 
@@ -63,17 +64,33 @@ function App() {
 
   return (
     <div>
+      <nav>
+        <div className='navbar-logo'>
+          <imagen src={momplanet} alt='Logo' />
+        </div>
+        <ul className='navbar-links'>
+          <li>
+            <a href='./components/Blog'>Blog</a>
+          </li>
+          <li>
+            <a href='./components/Blog'>Newsletter</a>
+          </li>
+          <li>
+            <a href='./components/Aboutus'>Sobre nosotros</a>
+          </li>
+        </ul>
+      </nav>
       {room ? (
         <Chat room={room} />
       ) : (
         <div className='room'>
-          <h2>Selecciona una temática </h2>
+          <h2>¿De qué te gustaría hablar? </h2>
           <div className='room-list'>
             {rooms.map((room, index) => (
               <div className='room-item' key={index}>
                 <img src={room.image} alt={room.name} />
                 <button onClick={() => setRoom(room.name)}>
-                  Entrar al chat de {room.name}
+                  Entrar en el Chat {/* de {room.name} */}
                 </button>
               </div>
             ))}
