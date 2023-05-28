@@ -1,0 +1,86 @@
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 0.5px solid #ccc;
+  border-radius: 5px;
+}
+
+.textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 0.5px solid #ccc;
+  border-radius: 5px;
+}
+
+.file-input {
+  margin-bottom: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: pink;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.buttoncancel {
+  background-color: pink;
+}
+
+.buttonsubmit {
+  background-color: pink;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  form {
+    padding: 10px;
+  }
+
+  .titulo {
+    font-size: 20px;
+  }
+
+  #title.input,
+  #body.textarea,
+  #image.file-input {
+    font-size: 14px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+h1.blog {
+  text-align: center;
+}
+h1.crea {
+  text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .titulo {
+    font-size: 18px;
+  }
+}

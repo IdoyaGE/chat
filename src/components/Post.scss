@@ -1,0 +1,54 @@
+$font-family: "Montserrat", sans-serif;
+$font-family: "Poppins", sans-serif;
+$font-family: "Quicksand", sans-serif;
+$font-family: "Wix Madefor Display", sans-serif;
+
+postEdited {
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  padding: 24px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+  }
+
+  .title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .body {
+    color: #333;
+    font-size: 10px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  .buttonEditar {
+    background-color: #fff;
+    border: 1px light pink;
+    border-radius: 4px;
+    color: pink;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 8px;
+    padding: 8px 16px;
+  }
+  &:hover {
+    background-color: pink;
+    color: #333;
+  }
+  .buttonDelete {
+    background-color: pink;
+    color: #333;
+  }
+  &:hover {
+    background-color: pink;
+    color: #333;
+  }
+}
