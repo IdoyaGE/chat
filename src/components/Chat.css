@@ -1,43 +1,75 @@
-.room-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.room-item {
-  text-align: center;
-  margin: 20px;
-}
-
-.room-item img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-}
-
-.room-item button {
-  display: block;
-  margin-top: 10px;
+.chat-app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
   font-family: "Montserrat", sans-serif;
   font-family: "Poppins", sans-serif;
   font-family: "Quicksand", sans-serif;
   font-family: "Wix Madefor Display", sans-serif;
+}
+
+.header {
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.messages {
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.user {
+  font-weight: bold;
+}
+
+.new-message-form {
+  display: flex;
+}
+
+.new-message-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.send-button {
   padding: 10px 20px;
-  margin-left: 10px;
-  background-color: #f2f2f2;
+  background-color: pink;
   color: #333;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
 }
 
-.sign-out {
-  text-align: center;
-  margin-top: 20px;
-}
-
-@media (max-width: 768px) {
-  .room-item {
-    flex-basis: 50%;
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .chat-app {
+    padding: 10px;
   }
 }

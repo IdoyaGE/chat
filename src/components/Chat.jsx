@@ -32,6 +32,7 @@ export const Chat = (props) => {
     });
     return () => unsubscribe();
   }, []);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (newMessage === "") return;
@@ -43,19 +44,24 @@ export const Chat = (props) => {
     });
     setNewMessage("");
   };
+
   return (
     <div className='chat-app'>
       <div className='header'>
-        <h3>
-          {" "}
-          En este chat compartimos y hablamos sobre: {room.toUpperCase()}
-        </h3>
+        <h3>En este chat compartimos y hablamos sobre: {room.toUpperCase()}</h3>
       </div>
       <div className='messages'>
         {messages.map((message) => (
-          <div className='message' key={message.id}>
+          <div
+            className={`message ${
+              message.user === auth.currentUser.displayName
+                ? "user-message"
+                : ""
+            }`}
+            key={message.id}
+          >
             <span className='user'>
-              <b>{message.user}</b>:<br></br>
+              <b>{message.user}</b>:<br />
             </span>
             {message.text}
           </div>
