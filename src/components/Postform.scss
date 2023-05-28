@@ -32,8 +32,9 @@ form {
   border-radius: 5px;
 }
 
-.file-input {
+input#imagen.file-input {
   margin-bottom: 10px;
+  background-color: pink;
 }
 
 .button {
@@ -83,4 +84,10 @@ h1.crea {
   .titulo {
     font-size: 18px;
   }
+}
+.buttonEditar {
+  text-align: center;
+}
+.buttonDelete {
+  text-align: center;
 }

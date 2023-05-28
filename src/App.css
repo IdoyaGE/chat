@@ -133,3 +133,52 @@ nav {
   text-align: center;
   margin-top: 20px;
 }
+
+/*CSS consejos*/
+.consejos {
+  margin: 20px;
+  text-align: center;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.box {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+}
+
+#iconos {
+  display: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    width: 100%;
+  }
+}
