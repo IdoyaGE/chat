@@ -1,0 +1,43 @@
+.room-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.room-item {
+  text-align: center;
+  margin: 20px;
+}
+
+.room-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.room-item button {
+  display: block;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #f2f2f2;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign-out {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .room-item {
+    flex-basis: 50%;
+  }
+}
