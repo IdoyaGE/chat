@@ -1,3 +1,5 @@
+/* Auth.css */
+
 /* Estilos generales */
 body {
   font-family: "Montserrat", sans-serif;
@@ -18,8 +20,8 @@ body {
 }
 
 .logo {
-  width: 350px;
-  margin: 0;
+  width: 250px;
+  margin: 10px;
 }
 
 .madre {
@@ -31,6 +33,7 @@ body {
 .auth {
   margin-top: 20px;
 }
+
 button {
   padding: 10px 20px;
   background-color: pink;
@@ -50,9 +53,17 @@ button {
     width: 150px;
   }
 }
+
 h3 {
   font-size: 30px;
   color: #a6a6a6;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 30px;
+  color: pink;
+  text-decoration: solid;
 }
 
 /* Estilos para tabletas y pantallas más grandes */

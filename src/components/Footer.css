@@ -1,0 +1,78 @@
+.redessociales {
+  background-color: #f3f3f3;
+}
+.redessociales {
+  text-align: center;
+  background-color: #f3f3f3;
+}
+.copy {
+  text-align: center;
+  background-color: #f3f3f3;
+  padding-top: 20px;
+}
+.email {
+  text-align: center;
+  background-color: #f3f3f3;
+}
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
+  background-color: pink !important;
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #495057;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #212529;
+  text-decoration: underline;
+}
+
+.footernavbar {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footernav-item {
+  margin-right: 10px;
+}
+
+.redessociales {
+  margin-top: 20px;
+}
+
+.redessociales p {
+  margin-bottom: 10px;
+}
+
+.list-unstyled {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.d-flexiconosredes {
+  list-style-type: none;
+  display: flex;
+}
+
+.d-flexiconosredes li {
+  margin-right: 10px;
+}
+
+#iconos {
+  margin-right: 5px;
+}

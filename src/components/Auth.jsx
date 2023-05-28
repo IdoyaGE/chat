@@ -23,16 +23,16 @@ export const Auth = (props) => {
       <img className='logo' src={logo} alt='logo' />
       <h3>¿Madre primeriza? </h3>
       <div>
-        <img className='madre' src={madre} alt='madre con bebé en brazos' />
-        <p>En momplanet hemos creado este blog para madres como tú </p>
+        <img className='madre' src={madre} alt='cuna y objetos de bebé' />
+        <p>Hemos creado este blog para madres como tú </p>
         <p>
           Encontrarás artículos útiles, guías prácticas y la posibilidad de
           entablar conversaciones con otras madres
         </p>
-        <p>No estás sola, juntas podemos compartir nuestras experiencias</p>
+        <h1>No estás sola, juntas compartimos experiencias</h1>
         <p>
-          Vamos a brindarnos apoyo mutuo y hacernos preguntas sin temor a ser
-          juzgadas, sintiéndonos valoradas y respetadas
+          Apoyo mutuo y preguntas sin temor a ser juzgadas, sintiéndonos
+          valoradas y respetadas
         </p>
       </div>
       <div className='auth'>

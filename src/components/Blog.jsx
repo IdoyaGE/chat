@@ -1,6 +1,6 @@
 import React from "react";
-function createPost() {
+function Blog() {
   return <div></div>;
 }
 
-export default createPost;
+export default Blog;
