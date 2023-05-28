@@ -11,6 +11,8 @@ import room2 from "./images/juegos.png";
 import room3 from "./images/seguridad.png";
 import room4 from "./images/postparto.png";
 import room5 from "./images/productos.png";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Footer from "./components/Footer";
 
 import momplanet from "./images/momplanet.png";
 
@@ -99,6 +101,13 @@ function App() {
       )}
       <div className='sign-out'>
         <button onClick={signUserOut}>Salir</button>
+      </div>
+      <div>
+        <Router>
+          <Routes>
+            <Route path='/' element={<Footer />} />
+          </Routes>
+        </Router>
       </div>
     </div>
   );
