@@ -10,19 +10,20 @@ import {
 } from "firebase/firestore";
 import { auth, db } from "../firebase-config";
 import "../components/Chat.css";
-
+//para almacenar el mensaje que el usuario escribe en el campo de entrada
 export const Chat = (props) => {
   const { room } = props;
   const [newMessage, setNewMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const messagesRef = collection(db, "messages");
-
+  //consulta a la base de datos utilizando las funciones de Firestore, por categoría y ordenando por fecha
   useEffect(() => {
     const queryMessages = query(
       messagesRef,
       where("room", "==", room),
       orderBy("createdAt")
     );
+    //callback onSnapshot: recorre los mensajes y se construye un array de objetos con los datos de cada mensaje
     const unsubscribe = onSnapshot(queryMessages, (snapshot) => {
       let messages = [];
       snapshot.forEach((doc) => {
@@ -32,7 +33,8 @@ export const Chat = (props) => {
     });
     return () => unsubscribe();
   }, []);
-
+  //envía el formulario de nuevo mensaje y verifica que el mensaje no esté vacío.
+  //utiliza la función addDoc para agregar un nuevo documento a la colección "messages" en la base de datos Firestore
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (newMessage === "") return;

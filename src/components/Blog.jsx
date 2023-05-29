@@ -10,7 +10,7 @@ import {
 } from "../utils/storage";
 //DONDE SE GUARDAN LOS POST
 
-//Variable de estado de los post (title,body), lista de post objetos ¡, se hace map y se crea un componente post, creamos formulario con dos input y al crear llama al handdleSubmit refresca la página y llama con el post al OnSubmit que se pasa como prop
+//Variable de estado de los post (title,body), lista de post objetos, se hace map y se crea un componente post, crea formulario con dos input y al crear llama al handdleSubmit refresca la página y llama con el post al OnSubmit que se pasa como prop
 const Blog = () => {
   const [newpost, setPosts] = useState(getPosts());
   //Meteriamos un fetch para conectar con el servidor

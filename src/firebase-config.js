@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore } from "firebase/firestore"; //para el chat
 
 const firebaseConfig = {
   apiKey: "AIzaSyAgrD1bRDvyCVJgtCbGpduubxz5HuQ0PMA",
@@ -14,4 +14,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const provider = new GoogleAuthProvider();
-export const db = getFirestore(app);
+export const db = getFirestore(app); //para la base de datos de los mensajes del chat

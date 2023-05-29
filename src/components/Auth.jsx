@@ -4,8 +4,9 @@ import Cookies from "universal-cookie";
 import logo from "../images/momplanet.png";
 import madre from "../images/madre.jpg";
 import "./Auth.css";
-const cookies = new Cookies();
 
+const cookies = new Cookies();
+//Autentficación de Google
 export const Auth = (props) => {
   const { setIsAuth } = props;
   const signInWithGoogle = async () => {
