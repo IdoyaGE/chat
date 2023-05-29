@@ -29,7 +29,7 @@ const PostForm = ({ onSubmit, post, onCancel }) => {
         const formData = new FormData();
         formData.append("image", image);
 
-        const response = await axios.post("/api/upload", formData); // Ruta de tu servidor para subir la imagen
+        const response = await axios.post("./images", formData); // Ruta para subir la imagen
         imageUrl = response.data.imageUrl;
       } catch (error) {
         console.error("Error al subir la imagen:", error);

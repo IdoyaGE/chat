@@ -66,7 +66,7 @@ h1 {
   text-decoration: solid;
 }
 
-/* Estilos para tabletas y pantallas más grandes */
+/* Estilos para tablet y pantallas más grandes */
 @media only screen and (min-width: 601px) {
   .madre {
     width: 300px;

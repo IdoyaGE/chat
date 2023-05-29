@@ -3,7 +3,7 @@ $font-family: "Poppins", sans-serif;
 $font-family: "Quicksand", sans-serif;
 $font-family: "Wix Madefor Display", sans-serif;
 
-postEdited {
+.postEdited {
   background-color: #f3f3f3;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -29,26 +29,13 @@ postEdited {
     margin-bottom: 24px;
   }
 
-  .buttonEditar {
-    background-color: #fff;
-    border: 1px light pink;
-    border-radius: 4px;
-    color: pink;
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 8px;
-    padding: 8px 16px;
-  }
-  &:hover {
-    background-color: pink;
-    color: #333;
-  }
-  .buttonDelete {
-    background-color: pink;
-    color: #333;
-  }
   &:hover {
     background-color: pink;
     color: #333;
   }
 }
+/* &:hover {
+  background-color: pink;
+  color: #333;
+}
+ */

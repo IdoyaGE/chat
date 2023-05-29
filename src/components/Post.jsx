@@ -1,19 +1,23 @@
 import { useState } from "react";
 import Postform from "./Postform";
+import "./Post.scss";
 //import dieta from "./images/dieta.png";
 
+//función que recibe un objeto de props que contiene información sobre un post
+//recibe dos funciones de callback: para borrar y editar el post
 const Post = ({ post, onDelete, onEdit }) => {
   const [editing, setEditing] = useState(false);
+  //para borrar
   const handleDelete = () => {
     onDelete(post.id);
   };
-
+  //para editar
   const handleEdit = (editedPost) => {
     editedPost.id = post.id;
     onEdit(editedPost);
     setEditing(false);
   };
-
+  //Devuelve el post editado
   return editing ? (
     <Postform
       post={post}
@@ -28,6 +32,7 @@ const Post = ({ post, onDelete, onEdit }) => {
       <button className='buttonEditar' onClick={() => setEditing(true)}>
         Editar
       </button>
+
       <button className='buttonDelete' onClick={handleDelete}>
         Borrar
       </button>

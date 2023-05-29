@@ -18,6 +18,7 @@ import momplanet from "./images/momplanet.png";
 import depresion from "./images/depresion.png";
 import dieta from "./images/dieta.png";
 import ejercicio from "./images/ejercicio.png";
+/* import momplanetvideo from "./images/momplanetvideo.mp4"; */
 
 const cookies = new Cookies();
 
@@ -32,6 +33,8 @@ function App() {
     setIsAuth(false);
     setRoom(null);
   };
+
+  //Chats
   const rooms = [
     {
       name: "Lactancia y nutrición",
@@ -72,14 +75,18 @@ function App() {
         </div>
         <ul className='navbar-links'>
           <li>
-            <a href='./components/Blog'>Blog</a>
-          </li>
-
-          <li>
             <a href='./components/Aboutus'>Sobre nosotros</a>
+          </li>
+          <li>
+            <a href='./components/Blog'>Blog</a>
           </li>
         </ul>
       </nav>
+      {/* <div className='video-container'>
+        <video autoPlay loop>
+          <source src={momplanetvideo} type='video/mp4' />
+        </video>
+      </div> */}
       {room ? (
         <Chat room={room} />
       ) : (
