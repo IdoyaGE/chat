@@ -18,7 +18,7 @@ import momplanet from "./images/momplanet.png";
 import depresion from "./images/depresion.png";
 import dieta from "./images/dieta.png";
 import ejercicio from "./images/ejercicio.png";
-/* import momplanetvideo from "./images/momplanetvideo.mp4"; */
+import momplanetvideo from "./images/momplanetvideo.mp4";
 
 const cookies = new Cookies();
 
@@ -69,7 +69,7 @@ function App() {
 
   return (
     <div>
-      <nav>
+      {/* <nav>
         <div className='navbar-logo'>
           <imagen src={momplanet} alt='Logo' />
         </div>
@@ -81,12 +81,19 @@ function App() {
             <a href='./components/Blog'>Blog</a>
           </li>
         </ul>
-      </nav>
-      {/* <div className='video-container'>
+      </nav> */}
+      <div className='video-container'>
+        <img
+          src={momplanet}
+          className='logo'
+          alt='Logo pieza puzzle'
+          width='150px'
+          height='200px'
+        />
         <video autoPlay loop>
           <source src={momplanetvideo} type='video/mp4' />
         </video>
-      </div> */}
+      </div>
       {room ? (
         <Chat room={room} />
       ) : (
