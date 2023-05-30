@@ -86,11 +86,11 @@ function App() {
         <img
           src={momplanet}
           className='logo'
-          alt='Logo pieza puzzle'
+          alt='Logo momplanet'
           width='150px'
           height='200px'
         />
-        <video autoPlay loop>
+        <video autoPlay loop muted>
           <source src={momplanetvideo} type='video/mp4' />
         </video>
       </div>

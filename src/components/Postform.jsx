@@ -66,18 +66,18 @@ const PostForm = ({ onSubmit, post, onCancel }) => {
         Título
       </label>
       <input
-        className='input'
+        className='input flexible-input'
         type='text'
         id='title'
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
-
+      
       <label className='label' htmlFor='body'>
         Contenido
       </label>
       <textarea
-        className='textarea'
+        className='textarea flexible-textarea'
         id='body'
         value={body}
         onChange={(e) => setBody(e.target.value)}
