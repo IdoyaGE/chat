@@ -8,11 +8,15 @@ form {
 .titulo {
   font-size: 24px;
   margin-bottom: 10px;
+  flex-wrap: wrap;
+  
 }
 
 .label {
   font-weight: bold;
   margin-bottom: 5px;
+  flex-wrap: wrap;
+ 
 }
 
 .input {
@@ -21,6 +25,7 @@ form {
   margin-bottom: 10px;
   border: 0.5px solid #ccc;
   border-radius: 5px;
+  flex-wrap: wrap;
 }
 
 .textarea {
@@ -30,6 +35,7 @@ form {
   margin-bottom: 10px;
   border: 0.5px solid #ccc;
   border-radius: 5px;
+  flex-wrap: wrap;
 }
 
 input#imagen.file-input {
@@ -72,6 +78,7 @@ input#imagen.file-input {
     font-size: 14px;
     flex-wrap: wrap;
     width: 100%;
+    flex-wrap: wrap;
   }
 }
 h1.blog {
@@ -91,4 +98,22 @@ h1.crea {
 }
 .buttonDelete {
   text-align: center;
+}
+.flexible-textarea {
+  min-height: 100px;
+  resize: vertical;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: auto;
+  max-height: 400px;
+}
+.flexible-input {
+  height: 70px;
+  resize: vertical;
+  width: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: auto;
+  max-height: 200px;
 }
